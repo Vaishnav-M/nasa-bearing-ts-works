@@ -116,7 +116,7 @@ class TimeSeriesFeatureEngine:
                 )
         
         # Fill any NaN values created by rolling (at the beginning)
-        df_rolled = df_rolled.fillna(method='bfill')
+        df_rolled = df_rolled.bfill()
         
         logger.info(f"Created {len(df_rolled.columns) - len(df.columns)} rolling features")
         return df_rolled
@@ -143,7 +143,7 @@ class TimeSeriesFeatureEngine:
                 df_lagged[f'{sensor}_lag_{lag}'] = df[sensor].shift(lag)
         
         # Fill NaN values at the beginning with forward fill
-        df_lagged = df_lagged.fillna(method='ffill')
+        df_lagged = df_lagged.ffill()
         
         logger.info(f"Created {len(df_lagged.columns) - len(df.columns)} lag features")
         return df_lagged

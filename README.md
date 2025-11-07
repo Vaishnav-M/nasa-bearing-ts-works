@@ -251,9 +251,7 @@ This project is for educational and assignment purposes.
 ## 📧 Contact
 
 **Vaishnav M**  
-AI/ML Engineer (Fresher)  
-[Your Email/LinkedIn]
-
+**Email:** vaishnavmsanthosh@hotmail.com    
 ---
 
 **Last Updated:** November 7, 2025  
