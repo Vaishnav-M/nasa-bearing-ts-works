@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project specific
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Model files (large - keep locally, don't commit)
+outputs/models/*.h5
+outputs/models/*.npy
+
+# Data (dataset is large - keep locally, don't commit)
+data/raw/bearing_dataset/
+
+# Development notes (optional)
+FIXED.md
+STATUS.md
+PRE_FLIGHT_CHECK.md
+EXECUTION_CHECKLIST.md
+QUICK_REFERENCE.md
+prompt.txt
